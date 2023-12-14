@@ -137,21 +137,3 @@ body {
   clear: both;
 }
 
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox] ~ label {
-  background: black;
-  color: #04A4FC;
-  padding: 16px;
-  display: block;
-}
-
-input[type=checkbox]:checked ~ label ~ .whatscoming { 
-  /* opacity: 0;
-  height: 0; */
-  display: none;
-}
-
-
