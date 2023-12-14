@@ -119,7 +119,8 @@ body {
 .whatscoming {
   position: absolute; /* Make this container relative to position children absolutely inside it */
   display: block; 
-  bottom: 150px;
+  font-size: 12px;
+  bottom: 120px;
   left:0;
   right:0;
   margin: 0 auto;
@@ -127,12 +128,12 @@ body {
   padding-left: 20px;
   padding-bottom: 10px;
   max-width: 90vw; /* Max width as a percentage of the viewport width */
-  max-height: 20vh; /* Max height as a percentage of the viewport height */
+  max-height: 25vh; /* Max height as a percentage of the viewport height */
   background-color: black; /* Footer background color */
   color: #04A4FC;
   border: 2px solid black; /* Adjust the border width as needed */
   border-radius: 10px; /* Adjust the corner radius as needed */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adjust the x-offset, y-offset, blur-radius, and color as needed */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Adjust the x-offset, y-offset, blur-radius, and color as needed */
   clear: both;
 }
 
