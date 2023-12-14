@@ -1,0 +1,119 @@
+/* 
+  CSS Reset
+  see: https://www.joshwcomeau.com/css/custom-css-reset/
+
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*
+Site settings
+*/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    background-image: url("img/sunset1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.image-container {
+    position: relative; /* Make this container relative to position children absolutely inside it */
+    display: block;
+    margin: 0 auto;
+	padding-top: 25px;
+    max-width: 90vw; /* Max width as a percentage of the viewport width */
+    max-height: 50vh; /* Max height as a percentage of the viewport height */
+    /* ... */
+}
+
+.title {
+    position: absolute; /* Absolutely position the title within the image container */
+    bottom: 2px; /* Position the title inside the bottom of the image */
+    left: 0; /* Align to the far left of the image-container */
+    right: 0; /* Align to the far right of the image-container */
+    text-align: center; /* Center the text within the title div */
+    font-size: 28px; /* Adjust font size as needed */
+	font-weight: bolder;
+    color: black; /* Text color changed to black */
+    padding: 5px 10px; /* Adjust padding as needed */
+    background: none; /* No background for the title */
+    z-index: 10; /* Make sure the title is above other content */
+    margin: 0; /* Remove any default margins */
+}
+
+.image {
+    display: block;
+    margin: auto; /* Center the image */
+    max-width: 90vw; /* Max width as a percentage of the viewport width */
+    max-height: 50vh; /* Max height as a percentage of the viewport height */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    border: 2px solid black; /* Adjust the border width as needed */
+    border-radius: 10px; /* Adjust the corner radius as needed */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adjust the x-offset, y-offset, blur-radius, and color as needed */
+}
+
+.footer {
+    position: fixed; /* Stick the footer to the bottom */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 36px;
+    background-color: black; /* Footer background color */
+    color: #04A4FC; /* Royal blue text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+    width: 100%; /* Ensure it spans the full width */
+}
