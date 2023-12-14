@@ -69,28 +69,27 @@ body {
 }
 
 .image-container {
-    position: relative; /* Make this container relative to position children absolutely inside it */
-    display: block;
-    margin: 0 auto;
+  position: relative; /* Make this container relative to position children absolutely inside it */
+  display: block;
+  margin: 0 auto;
 	padding-top: 25px;
-    max-width: 90vw; /* Max width as a percentage of the viewport width */
-    max-height: 50vh; /* Max height as a percentage of the viewport height */
-    /* ... */
+  max-width: 90vw; /* Max width as a percentage of the viewport width */
+  max-height: 50vh; /* Max height as a percentage of the viewport height */
 }
 
 .title {
-    position: absolute; /* Absolutely position the title within the image container */
-    bottom: 2px; /* Position the title inside the bottom of the image */
-    left: 0; /* Align to the far left of the image-container */
-    right: 0; /* Align to the far right of the image-container */
-    text-align: center; /* Center the text within the title div */
-    font-size: 28px; /* Adjust font size as needed */
+  position: absolute; /* Absolutely position the title within the image container */
+  bottom: 2px; /* Position the title inside the bottom of the image */
+  left: 0; /* Align to the far left of the image-container */
+  right: 0; /* Align to the far right of the image-container */
+  text-align: center; /* Center the text within the title div */
+  font-size: 28px; /* Adjust font size as needed */
 	font-weight: bolder;
-    color: black; /* Text color changed to black */
-    padding: 5px 10px; /* Adjust padding as needed */
-    background: none; /* No background for the title */
-    z-index: 10; /* Make sure the title is above other content */
-    margin: 0; /* Remove any default margins */
+  color: black; /* Text color changed to black */
+  padding: 5px 10px; /* Adjust padding as needed */
+  background: none; /* No background for the title */
+  z-index: 10; /* Make sure the title is above other content */
+  margin: 0; /* Remove any default margins */
 }
 
 .image {
@@ -116,3 +115,42 @@ body {
     padding: 10px 0; /* Add some padding */
     width: 100%; /* Ensure it spans the full width */
 }
+
+.whatscoming {
+  position: absolute; /* Make this container relative to position children absolutely inside it */
+  display: block; 
+  bottom: 150px;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  max-width: 90vw; /* Max width as a percentage of the viewport width */
+  max-height: 20vh; /* Max height as a percentage of the viewport height */
+  background-color: black; /* Footer background color */
+  color: #04A4FC;
+  border: 2px solid black; /* Adjust the border width as needed */
+  border-radius: 10px; /* Adjust the corner radius as needed */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adjust the x-offset, y-offset, blur-radius, and color as needed */
+  clear: both;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] ~ label {
+  background: black;
+  color: #04A4FC;
+  padding: 16px;
+  display: block;
+}
+
+input[type=checkbox]:checked ~ label ~ .whatscoming { 
+  /* opacity: 0;
+  height: 0; */
+  display: none;
+}
+
+
