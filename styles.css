@@ -68,7 +68,6 @@ body {
     width: 100vw;
 }
 
-
 .image-container {
     position: relative; /* Make this container relative to position children absolutely inside it */
     display: block;
